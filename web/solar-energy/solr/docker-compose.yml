@@ -1,0 +1,13 @@
+version: "2"
+services:
+  solr:
+    container_name: solr
+    build: .
+    restart: always
+    command:
+     - solr-precreate
+     - hackimsearch
+     - SeCrEtSeArCh8888
+    ports:
+      - "8983:8983"
+

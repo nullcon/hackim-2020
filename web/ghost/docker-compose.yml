@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  ghost:
+    image: nwtgck/nginx-http3
+    ports:
+      - '8443:443/udp'
+    restart: always
+    volumes:
+      - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
+      # NOTE: Should set cert properly
+      - ./fullchain.pem:/etc/ssl/certs/server.crt
+      # NOTE: Should set key properly
+      - ./privkey.pem:/etc/ssl/private/server.key
+      - ./public:/var/www/html/ 
+      - ./static:/var/www/static/
+      - ./backup:/var/www/backup/
+    links:
+        - php
+  php:
+    image: php:7-fpm
+    volumes:
+        - ./public:/var/www/html/

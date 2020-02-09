@@ -1,0 +1,11 @@
+To signup
+http://localhost/check.php?signup=true&name=asd
+
+To Impersonate a person
+http://localhost/check.php?impersonator=asd&impersonatee=check
+
+To umimpersonate a person
+http://localhost/check.php?unimpersonate=asd-admin
+
+To get status
+http://localhost/check.php?status=asd

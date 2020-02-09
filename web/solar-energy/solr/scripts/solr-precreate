@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# Create a core on disk and then run solr in the foreground
+# arguments are: corename configdir
+# To simply create a core:
+#      docker run -P -d solr solr-precreate mycore
+# To create a core from mounted config:
+#      docker run -P -d -v $PWD/myconfig:/myconfig solr solr-precreate mycore /myconfig
+# To create a core in a mounted directory:
+#      mkdir myvarsolr; chown 8983:8983 myvarsolr
+#      docker run -it --rm -P -v $PWD/myvarsolr://var/solr solr solr-precreate mycore
+set -e
+
+echo "Executing $0" "$@"
+
+if [[ "${VERBOSE:-}" == "yes" ]]; then
+    set -x
+fi
+
+# init script for handling an empty /var/solr
+/opt/docker-solr/scripts/init-var-solr
+
+. /opt/docker-solr/scripts/run-initdb
+
+/opt/docker-solr/scripts/precreate-core "$1"
+
+/opt/docker-solr/scripts/precreate-core "$2"
+
+cp /tmp/flag.txt /var/solr/data/$2/conf/flag.txt
+#cp /tmp/solrconfig.xml /var/solr/data/hackimsearch/conf/solrconfig.xml
+
+start-local-solr
+CORE=$1
+SEC=$2
+sleep 10
+/opt/solr/bin/post -c $CORE -commit yes example/exampledocs/books.json
+/opt/solr/bin/post -c $CORE -commit yes example/exampledocs/books.csv
+/opt/solr/bin/post -c $SEC -commit yes /tmp/secret.xml
+
+stop-local-solr
+
+exec solr-fg
+

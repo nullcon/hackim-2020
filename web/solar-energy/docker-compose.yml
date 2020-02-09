@@ -1,0 +1,17 @@
+version: "2"
+services:
+  solr:
+    container_name: solr
+    build: ./solr
+    restart: always
+    command:
+     - solr-precreate
+     - hackimsearch
+     - SeCrEtSeArCh8888
+  app:
+    container_name: app
+    restart: always
+    build: ./php
+    ports:
+     - "8080:80"
+

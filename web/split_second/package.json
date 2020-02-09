@@ -1,0 +1,14 @@
+{
+  "name": "Split_second",
+  "version": "1.0.0",
+  "description": "Split_second",
+  "author": "N B Sri Harsha <harsha@defmax.io>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.4"
+  }
+}

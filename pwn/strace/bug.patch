@@ -1,0 +1,13 @@
+diff --git a/util.c b/util.c
+index 8781bdf4..ec2ccfba 100644
+--- a/util.c
++++ b/util.c
+@@ -915,7 +915,7 @@ printstr_ex(struct tcb *const tcp, const kernel_ulong_t addr,
+ 		   && ((style & QUOTE_0_TERMINATED)
+ 		       || len > max_strlen);
+ 
+-	tprints(outstr);
++	tprintf(outstr);
+ 	if (ellipsis)
+ 		tprints("...");
+ 

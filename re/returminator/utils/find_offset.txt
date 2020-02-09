@@ -1,0 +1,72 @@
+# movzx
+a=`ROPgadget --binary main | grep ": movzx rdi, byte ptr \[rdi\] ; ret" | awk '{print $1}'`
+b=`ROPgadget --binary main | grep ": movzx rsi, byte ptr \[rsi\] ; ret" | awk '{print $1}'`
+c=`ROPgadget --binary main | grep ": movzx rdx, byte ptr \[rdx\] ; ret" | awk '{print $1}'`
+d=`ROPgadget --binary main | grep ": movzx rcx, byte ptr \[rcx\] ; ret" | awk '{print $1}'`
+
+echo "mov_rdi_deref_rdi = $a"
+echo "mov_rsi_deref_rsi = $b"
+echo "mov_rdx_deref_rdx = $c"
+echo "mov_rcx_deref_rcx = $d"
+echo ""
+
+# pop
+a=`ROPgadget --binary main | grep ": pop rax ; ret" | awk '{print $1}'`
+b=`ROPgadget --binary main | grep ": pop rdi ; ret" | awk '{print $1}'`
+c=`ROPgadget --binary main | grep ": pop rsi ; ret" | awk '{print $1}'`
+d=`ROPgadget --binary main | grep ": pop rdx ; ret" | awk '{print $1}'`
+e=`ROPgadget --binary main | grep ": pop rcx ; ret" | awk '{print $1}'`
+
+echo "pop_rax = $a"
+echo "pop_rdi = $b"
+echo "pop_rsi = $c"
+echo "pop_rdx = $d"
+echo "pop_rcx = $e"
+echo ""
+
+# add
+a=`ROPgadget --binary main | grep ": add rax, 1 ; ret" | awk '{print $1}'`
+b=`ROPgadget --binary main | grep ": add rax, rax ; ret" | awk '{print $1}'`
+c=`ROPgadget --binary main | grep ": add rax, rdi ; ret" | awk '{print $1}'`
+d=`ROPgadget --binary main | grep ": add rax, rsi ; ret" | awk '{print $1}'`
+e=`ROPgadget --binary main | grep ": add rax, rdx ; ret" | awk '{print $1}'`
+f=`ROPgadget --binary main | grep ": add rax, rcx ; ret" | awk '{print $1}'`
+
+echo "add_rax_1 = $a"
+echo "add_rax_rax = $b"
+echo "add_rax_rdi = $c"
+echo "add_rax_rsi = $d"
+echo "add_rax_rdx = $e"
+echo "add_rax_rcx = $f"
+echo ""
+
+# sub
+a=`ROPgadget --binary main | grep ": sub rax, 1 ; ret" | awk '{print $1}'`
+b=`ROPgadget --binary main | grep ": sub rax, rdi ; ret" | awk '{print $1}'`
+c=`ROPgadget --binary main | grep ": sub rax, rsi ; ret" | awk '{print $1}'`
+d=`ROPgadget --binary main | grep ": sub rax, rdx ; ret" | awk '{print $1}'`
+e=`ROPgadget --binary main | grep ": sub rax, rcx ; ret" | awk '{print $1}'`
+
+echo "sub_rax_1 = $a"
+echo "sub_rax_rdi = $b"
+echo "sub_rax_rsi = $c"
+echo "sub_rax_rdx = $d"
+echo "sub_rax_rcx = $e"
+echo ""
+
+# xor
+a=`ROPgadget --binary main | grep ": xor rax, rax ; ret" | awk '{print $1}'`
+
+echo "xor_rax_rax = $a"
+echo ""
+
+# mov
+a=`ROPgadget --binary main | grep ": mov rdi, rax ; ret" | awk '{print $1}'`
+b=`ROPgadget --binary main | grep ": mov rsi, rax ; ret" | awk '{print $1}'`
+c=`ROPgadget --binary main | grep ": mov rdx, rax ; ret" | awk '{print $1}'`
+d=`ROPgadget --binary main | grep ": mov rcx, rax ; ret" | awk '{print $1}'`
+
+echo "mov_rdi_rax = $a"
+echo "mov_rsi_rax = $b"
+echo "mov_rdx_rax = $c"
+echo "mov_rcx_rax = $d"

@@ -1,0 +1,619 @@
+pop rax
+flag
+pop rdi
+0x0
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x2
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x4
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+pop rdi
+0x64
+sub rax, rdi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x6
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x8
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0xa
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0xc
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xe
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x10
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x12
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x1
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x1e
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+sub rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x3
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x16
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x3
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+pop rdi
+0x64
+sub rax, rdi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x5
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x1d
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x1c
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+pop rax
+flag
+pop rcx
+0x7
+add rax, rcx
+mov rcx, rax
+movzd rcx, BYTE PTR [rcx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+sub rax, rcx
+pop rdi
+0x64
+sub rax, rdi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x9
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x11
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0xb
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+sub rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x13
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x1b
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+mov rcx, rax
+pop rax
+flag
+pop rdi
+0xd
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xf
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x14
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+sub rax, rcx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x15
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x17
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x17
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+add rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x19
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x1a
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1e
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x9
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x8
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x2
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x3
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x4
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x5
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x6
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x7
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0xb
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x0
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1d
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1d
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1d
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xd
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+sub rqx, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1c
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xe
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+sub rqx, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1c
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xf
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x0
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x1b
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+sub rqx, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x17
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x18
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+sub rqx, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x1a
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x0
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+pop rax
+flag
+0x40119e
+0x1
+add rax, rdx
+mov rdx, rax
+movzx rdx, BYTE PTR [rdx]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+sub rax, rdx
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x13
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0xb
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0xc
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+add rax, rsi
+mov rdi, rax
+call exit@plt
+---------------------------
+pop rax
+flag
+pop rdi
+0x15
+add rax, rdi
+mov rdi, rax
+movzx rdi, BYTE PTR [rdi]
+pop rax
+flag
+pop rsi
+0x14
+add rax, rsi
+mov rsi, rax
+movzx rsi, BYTE PTR [rsi]
+xor rax, rax
+add rax, rdi
+sub rqx, rsi
+mov rdi, rax
+call exit@plt
+---------------------------

@@ -1,0 +1,12 @@
+version: "2"
+services:
+  split_second:
+    container_name: split_second
+    restart: always
+    build: .
+    volumes:
+      - ./flag.txt:/flag.txt
+    ports:
+      - "8081:8081"
+
+
