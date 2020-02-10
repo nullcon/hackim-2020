@@ -1,6 +1,6 @@
 # Zelda and the Space Puzzle
 
-Flag: `REVOLUTIONSTARTSWITHME`
+Flag: `hackim20{z3lda_s0lved_the_sp4ce_puzzl3}`
 
 Description: `After conquering on land. Zelda is stuck in another dimension in Space. He will be stuck here till he solves the puzzle that the dark lord has tested him with.
 
