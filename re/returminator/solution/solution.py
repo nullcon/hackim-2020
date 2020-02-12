@@ -32,7 +32,7 @@ def decode(buf):
 dis = {}
 dis[0x40119a] = 'pop rdi'
 dis[0x40119c] = 'pop rsi'
-dis[0x40019e] = 'pop rdx'
+dis[0x40119e] = 'pop rdx'
 
 '''
  23 .bss          00000048  0000000000404080  0000000000404080  00003068  2**5
