@@ -14,7 +14,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x4
 add rax, rdx
 mov rdx, rax
@@ -45,7 +45,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0xa
 add rax, rdx
 mov rdx, rax
@@ -73,7 +73,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x10
 add rax, rdx
 mov rdx, rax
@@ -101,7 +101,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x1e
 add rax, rdx
 mov rdx, rax
@@ -129,7 +129,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x3
 add rax, rdx
 mov rdx, rax
@@ -160,7 +160,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x1c
 add rax, rdx
 mov rdx, rax
@@ -199,7 +199,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0xb
 add rax, rdx
 mov rdx, rax
@@ -245,7 +245,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x14
 add rax, rdx
 mov rdx, rax
@@ -274,7 +274,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x17
 add rax, rdx
 mov rdx, rax
@@ -556,7 +556,7 @@ mov rsi, rax
 movzx rsi, BYTE PTR [rsi]
 pop rax
 flag
-0x40119e
+pop rdx
 0x1
 add rax, rdx
 mov rdx, rax
